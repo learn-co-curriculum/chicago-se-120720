@@ -127,3 +127,30 @@ def game_hash
     }
   }
 end
+
+def num_points_scored(player_name)
+  # find the player whose name matches the argument 'player_name'
+  player = find_player(players, player_name)
+
+  # return the number of points scored by that player
+  player[:points]
+end
+
+def players 
+  # map over each team and return the team's players
+  players_arrays_array = game_hash.values.map do |team|
+    team[:players]
+  end
+  
+  # flatten the nested array
+  players_arrays_array.flatten
+end
+
+def find_player(players, player_name)
+  # search the array of players and find the first that has the given name
+  players.find do |player|
+    player[:player_name] == player_name
+  end
+end
+
+puts num_points_scored("Kemba Walker")
