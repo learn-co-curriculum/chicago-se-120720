@@ -9,6 +9,10 @@
 
 ## Questions
 
+- each vs other enumerables
+- pseudo code enumerables
+- reject method
+
 ## Notes
 
 ## Icebox

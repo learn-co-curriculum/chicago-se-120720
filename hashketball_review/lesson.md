@@ -222,10 +222,10 @@ The `#find` enumerable is a great candidate for this. `#find` searches through a
 ```ruby
 def num_points_scored(player_name)
   # get a list of all the players
-  all_players = players
+  all_players = get_players
   
   # find the player whose name matches the argument 'player_name'
-  all_player = players.find do |player|
+  found_player = players.find do |player|
     player[:name] = player_name
   end
   # return that player's points
@@ -252,6 +252,7 @@ Along with clear naming, this practice makes our code more accessible and functi
 
 ```ruby
 def num_points_scored(player_name)
+  players = get_players
   player = find_player(players, player_name)
 
   player[:points]

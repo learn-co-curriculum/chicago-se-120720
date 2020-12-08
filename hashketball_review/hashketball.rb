@@ -1,7 +1,7 @@
 # Write your code below game_hash
 require "pry"
 
-def game_hash
+def game_hash 
   {
     home: {
       team_name: "Brooklyn Nets",
@@ -126,4 +126,33 @@ def game_hash
       ]
     }
   }
+end 
+
+def num_points_scored(player_name)
+  # get a list of all players
+  players = get_players
+  # find a player who's name matches player_name
+  found_player = find_player(players, player_name)
+  # return that players score
+  found_player[:points]
 end
+
+def find_player(players, player_name)
+  # iterate over players and find the player who's :player_name is equal to the player name_argument
+  found_player = players.find do |player|
+    player[:player_name] == player_name
+  end
+end
+
+def get_players
+  # get an array of team_infos
+  team_infos = game_hash.values
+  # for each team info in team_infos, pull the value at the :players key
+  players = team_infos.map do |team_info|
+    team_info[:players]
+  end
+  # flatten the nested players array
+  players.flatten
+end
+
+num_points_scored("Jason Terry")
