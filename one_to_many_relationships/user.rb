@@ -20,4 +20,8 @@ class User
       tweet.user == self
     end
   end
+
+  def hi
+    puts "#{username}"
+  end
 end
