@@ -1,8 +1,10 @@
 class User
   attr_reader :username
-  
+  attr_accessor :string
+
   def initialize(username)
     @username = username
+    @string = "thing"
   end
 
   # post a new tweet
@@ -41,5 +43,10 @@ class User
     liked_tweets.map do |liked_tweet|
       liked_tweet.message
     end
+  end
+
+  def change_string
+    self.string ="another thing"
+    # binding.pry
   end
 end
