@@ -1,0 +1,11 @@
+require_relative './config/environment'
+
+set :database_file, "database.yml"
+require 'sinatra/activerecord'
+require 'sinatra/activerecord/rake'
+
+
+desc 'Enter a console'
+task :console do
+  Pry.start
+end
