@@ -10,4 +10,4 @@ ActiveRecord::Base.logger = Logger.new(STDOUT)
 
 require_all 'app'
 
-     
+CLI.new.run

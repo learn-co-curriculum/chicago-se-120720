@@ -12,8 +12,10 @@
 ## Questions
 
 - ||= lazyloading ~> || =
- myvar ||= makemyvar()
+  myvar ||= makemyvar()
 - <p> Can't </p>
+- setting a default path for controllers to find views
+
 
 ## Notes
 

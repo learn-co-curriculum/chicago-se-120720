@@ -1,0 +1,14 @@
+<% @authors.each do |author| %>
+    <p>
+        <a href="authors/<%= author.id %>">
+            <%= author.name %>
+        </a>
+        <a href="authors/<%= author.id %>/edit">edit</a>
+        
+        <form action="authors/<%= author.id %>" method="POST">
+            <input type="hidden" name="_method" value="DELETE">
+            
+            <input type="submit" value="delete">
+        </form>
+    </p>
+<% end %>

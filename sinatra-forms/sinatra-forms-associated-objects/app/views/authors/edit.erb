@@ -1,0 +1,8 @@
+<form method="POST" action="/authors/<%= @author.id %>">
+    <input type="hidden" name="_method" value="PATCH">
+
+    <label for="name">Name</label>
+    <input type="text" name="name" value="<%= @author.name %>"></input>
+    
+    <input type="submit" value="Update Author">
+</form>
