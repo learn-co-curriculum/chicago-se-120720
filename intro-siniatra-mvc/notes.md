@@ -11,11 +11,10 @@
 
 ## Questions
 
-- ||= lazyloading ~> || =
-  myvar ||= makemyvar()
-- <p> Can't </p>
-- setting a default path for controllers to find views
-
+- groups in gemfile
+- redirect?
+- get method to patch
+- put vs patch
 
 ## Notes
 
@@ -45,7 +44,6 @@ CRUD - Create, Read, Update, Destroy
 
 1. Client-server rest application separate user interface concerns from data storage concerns
 2. Stateless - each request has everything it needs to be processed and return
-
 
 ## Icebox
 

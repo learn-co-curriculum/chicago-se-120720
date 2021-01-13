@@ -5,12 +5,13 @@
     <label for="snippet">Snippet</label>
     <input type="text" name="snippet" value=""></input>
     
-    <label for="author_id">author_id</label>
+    <%# <label for="author_id">author_id</label>
+    <input type="text" name="author_id" value=""></input> %>
     <select name="author_id">
         <% @authors.each do |author| %>
             <option value="<%= author.id %>"><%= author.name %></option>
         <% end %>
+        <option value="create_new">create a new author</option>
     </select>
-
     <input type="submit" value="Create Book">
 </form>

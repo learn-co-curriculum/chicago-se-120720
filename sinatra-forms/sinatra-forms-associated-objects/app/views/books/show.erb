@@ -1,5 +1,6 @@
 <nav id="book">
   <h3><%= @book.title %></h3>
+  <a href="/authors/<%= @book.author.id %>"><h4><%= @book.author.name %></h4></a>
   <ul>
     <li>
       <a href="/books/<%= @book.id %>/edit">Edit book</a>

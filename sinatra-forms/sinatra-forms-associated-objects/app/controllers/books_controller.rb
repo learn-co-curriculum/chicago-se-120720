@@ -1,4 +1,5 @@
 class BooksController < ApplicationController
+
   # Index
   get '/books' do
     @books = Book.all
@@ -8,6 +9,7 @@ class BooksController < ApplicationController
 
   # new
   get '/books/new' do
+    @authors = Author.all
     erb :"books/new"
   end
 
@@ -20,7 +22,11 @@ class BooksController < ApplicationController
 
   # create
   post '/books' do
-    book = Book.create(params)
+    if params[:author_id] == "create_new"
+      redirect "authors/new"
+    else
+      book = Book.create(params)
+    end
 
     redirect "/books/#{book.id}"
   end
