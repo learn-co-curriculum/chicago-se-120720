@@ -1,0 +1,12 @@
+<%= form_for(@recipe) do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+  
+  <%= f.label :content %>
+  <%= f.text_field :content %>
+
+  <%= f.label :bartender %>
+  <%= f.collection_select(:bartender_id, @bartenders, :id, :username) %>
+  
+  <%= f.submit %>
+<% end %>
