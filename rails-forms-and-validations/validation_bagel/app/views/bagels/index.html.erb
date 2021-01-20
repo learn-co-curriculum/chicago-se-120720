@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Bagels</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Price</th>
+      <th>Special</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @bagels.each do |bagel| %>
+      <tr>
+        <td><%= bagel.name %></td>
+        <td><%= bagel.price %></td>
+        <td><%= bagel.special %></td>
+        <td><%= link_to 'Show', bagel %></td>
+        <td><%= link_to 'Edit', edit_bagel_path(bagel) %></td>
+        <td><%= link_to 'Destroy', bagel, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Bagel', new_bagel_path %>

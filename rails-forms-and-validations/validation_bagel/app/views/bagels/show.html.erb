@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @bagel.name %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @bagel.price %>
+</p>
+
+<p>
+  <strong>Special:</strong>
+  <%= @bagel.special %>
+</p>
+
+<%= link_to 'Edit', edit_bagel_path(@bagel) %> |
+<%= link_to 'Back', bagels_path %>
