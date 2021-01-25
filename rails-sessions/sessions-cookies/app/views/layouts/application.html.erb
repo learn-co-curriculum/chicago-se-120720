@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Flavortown™️</title>
+    <link rel="flavortown icon" href="https://www.famousbirthdays.com/headshots/guy-fieri-5.jpg">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <header>
+      <%= flash[:notice] %>
+      <% if @cart_items %>
+        <h3>My cart</h3>
+        <% @cart_items.each do |cart_item| %>
+          <li><%= cart_item.name %></li>
+        <% end %>
+      <% end %>
+    </header>
+    <%= yield %>
+  </body>
+</html>

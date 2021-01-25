@@ -1,0 +1,11 @@
+<h1>Menu</h1>
+
+<% @nachos.map do |nacho| %>
+  <ul>
+    <li>
+      <%= link_to nacho.name, nacho %>
+      $<%= nacho.price %>
+    </li>
+    <%= button_to "Add to Cart", add_to_cart_path, method: :patch, params: { nacho_id: nacho.id } %>
+  </ul>
+<% end %>
