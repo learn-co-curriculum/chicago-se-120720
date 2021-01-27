@@ -8,7 +8,7 @@
 
 ## Question
 
-- 
+- user - listing - owner - item
 
 Authentication vs Authorization
 

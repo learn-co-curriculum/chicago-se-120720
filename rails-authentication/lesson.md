@@ -69,7 +69,7 @@ def create
   if @user.save
     redirect_to @user
   else
-    redirect_to new_user_path
+    redirect_to signup_path
   end
 end
 

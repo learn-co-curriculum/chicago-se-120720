@@ -11,6 +11,14 @@
   </head>
 
   <body>
+    <nav>
+      <% if current_user %>
+        <%= button_to "Logout", logout_path, method: :delete %>
+      <% else %>
+        <%= link_to "Signup", signup_path %>
+        <%= link_to "Login", login_path %>
+      <% end %>
+    </nav>
     <% if flash.alert %>
       <% flash.alert.each do |message| %>
         <li><%= message%></li>
