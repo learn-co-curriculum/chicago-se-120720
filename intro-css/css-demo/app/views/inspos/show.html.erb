@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @inspo.title %>
+</p>
+
+<p>
+  <strong>Code snippet:</strong>
+  <%= @inspo.code_snippet %>
+</p>
+
+<p>
+  <strong>Img url:</strong>
+  <%= @inspo.img_url %>
+</p>
+
+<%= link_to 'Edit', edit_inspo_path(@inspo) %> |
+<%= link_to 'Back', inspos_path %>

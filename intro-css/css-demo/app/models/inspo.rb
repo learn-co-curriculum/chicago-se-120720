@@ -1,0 +1,2 @@
+class Inspo < ApplicationRecord
+end

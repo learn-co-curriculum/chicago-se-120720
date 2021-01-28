@@ -1,0 +1,2 @@
+module InsposHelper
+end

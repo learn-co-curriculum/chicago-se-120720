@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CssDemo</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <p>
+      <span>litte text</span>
+      <span>little bit more</span>
+      <span>end of text</span>
+    </p>
+    <nav class="top-nav">
+      <div class="link-container">
+        <%= link_to "all inspos", inspos_path %>
+        <p class="hidden-text">show all the inspos</p>
+      </div>
+      <div class="link-container">
+        <%= link_to "new inspos", new_inspo_path %>
+        <p class="hidden-text">create a new inspo</p>
+      </div>
+      <div class="link-container">
+        <%= link_to "new inspos", new_inspo_path %>
+        <p class="hidden-text">create a new inspo</p>
+      </div>
+    </nav>
+    <%= yield %>
+  </body>
+</html>
