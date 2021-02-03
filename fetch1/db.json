@@ -1,0 +1,54 @@
+{
+  "books": [
+    {
+      "id": 1,
+      "title": "Frolic of the Beasts",
+      "author": "Yukio Mishima"
+    },
+    {
+      "id": 2,
+      "title": "The Glass Bead Game",
+      "author": "Herman Hesse"
+    },
+    {
+      "id": 3,
+      "title": "War & Peace",
+      "author": "Leo Tolstoy"
+    },
+    {
+      "id": 4,
+      "title": "48 Laws of Power",
+      "author": "Robert Greene"
+    },
+    {
+      "id": 5,
+      "title": "The Namesake",
+      "author": "Jhumpa Lahiri"
+    },
+    {
+      "title": "captain underpants (all of em)",
+      "author": "unknown",
+      "id": 6
+    },
+    {
+      "title": "foo",
+      "author": "bar",
+      "id": 7
+    },
+    {
+      "title": "red",
+      "author": "whitew",
+      "id": 8
+    },
+    {
+      "title": "blue",
+      "author": "green",
+      "id": 9
+    },
+    {
+      "title": "asdf",
+      "author": "asdf",
+      "id": 10
+    }
+  ]
+}

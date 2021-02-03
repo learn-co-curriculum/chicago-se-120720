@@ -1,0 +1,21 @@
+body{
+	background: slategray;
+}
+
+.card{
+	display:inline-block;
+	border-style: double;
+	width: 310px;
+}
+
+
+.completed {
+  text-decoration: line-through;
+}
+
+
+#book-list {
+  color: white;
+}
+
+

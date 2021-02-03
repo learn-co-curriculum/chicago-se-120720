@@ -1,0 +1,36 @@
+
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>JS Events</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+  </head>
+
+  <body>
+    <script src="src/index.js" defer></script>
+
+    <a href='http://google.com'>click me</a>
+    <div id="comments">
+      <h3 id='c-header'>Comments</h3>
+      <form id='comment-form'>
+        <div class="field">
+          <input id='new-comment' type='text' placeholder='New Comment' name='comment-field' />
+          <!-- giving our button the type of submit will cause it to tell the form to submit -->
+          <input type='submit' class='btn' value="Submit!" />
+        </div>
+      </form>
+
+      <div id="helicopter-parent">
+          <br>
+          <button id='alert-btn' class="btn" data-name="alert">Alert ME</button>
+          <button id='console-btn' class="btn" data-name="log">Console Log something</button>
+      </div>
+
+      <div id="comments-container">
+      </div>
+
+    </div>
+
+  </body>
+</html>
