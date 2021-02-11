@@ -1,0 +1,150 @@
+{
+  "quotes": [
+    {
+      "id": 3,
+      "quote": "today a man on the street pointed to me & said ‘what the hell is that!?’ i wanted to turn around, tell him that i got this dress on sale & i got this body for free but you have been making me pay for both ever since.",
+      "author": "Alok Vaid Menon"
+    },
+    {
+      "id": 4,
+      "quote": "You gain strength, courage and confidence by every experience in which you really stop to look fear in the face. You are able to say to yourself, 'I have lived through this horror. I can take the next thing that comes along.' You must do the thing you think you cannot do.",
+      "author": "Eleanor Roosevelt"
+    },
+    {
+      "id": 5,
+      "quote": "We had better not enjoy the moment, but create the moment.",
+      "author": "Ai Weiwei"
+    },
+    {
+      "id": 6,
+      "quote": "If I didn't define myself for myself, I would be crunched into other people's fantasies for me and eaten alive.",
+      "author": "Audre Lorde"
+    },
+    {
+      "id": 7,
+      "quote": "Our greatest glory is not in never falling, but in rising everytime we fall.",
+      "author": "Confucius"
+    },
+    {
+      "id": 8,
+      "quote": "Don't count the days, make the days count.",
+      "author": "Muhammad Ali"
+    },
+    {
+      "id": 9,
+      "quote": "Not everything that is faced can be changed, but nothing can be changed until it is faced.",
+      "author": "James Baldwin"
+    },
+    {
+      "id": 10,
+      "quote": "You know, failure hurts. Any kind of failure stings. If you live in the sting, you will undoubtedly fail. My way of getting past the sting is to say no, I’m just not going to let this get me down.",
+      "author": "Sonia Sotomayor"
+    },
+    {
+      "id": 11,
+      "quote": "The here and now is all we have, and if we play it right it's all we'll need.",
+      "author": "Ann Richards"
+    },
+    {
+      "quote": "learn love code",
+      "author": "flatiron",
+      "id": 12
+    },
+    {
+      "quote": "asfdasfd",
+      "author": "sadfasdf",
+      "id": 13
+    },
+    {
+      "quote": "foo",
+      "author": "bar",
+      "id": 14
+    },
+    {
+      "quote": "fooz",
+      "author": "ball",
+      "likes": [],
+      "id": 15
+    },
+    {
+      "quote": "food",
+      "author": "bars",
+      "likes": [],
+      "id": 16
+    },
+    {
+      "quote": "hello",
+      "author": "world",
+      "id": 17
+    },
+    {
+      "quote": "yello",
+      "author": "bluye",
+      "id": 18
+    },
+    {
+      "quote": "red",
+      "author": "black",
+      "id": 19
+    }
+  ],
+  "likes": [
+    {
+      "quoteId": 10,
+      "id": 2,
+      "createdAt": 1558524358
+    },
+    {
+      "quoteId": 3,
+      "id": 3
+    },
+    {
+      "quoteId": 3,
+      "id": 4
+    },
+    {
+      "quoteId": 3,
+      "id": 5
+    },
+    {
+      "quoteId": 3,
+      "id": 6
+    },
+    {
+      "quoteId": 3,
+      "id": 7
+    },
+    {
+      "quoteId": 3,
+      "id": 8
+    },
+    {
+      "quoteId": 3,
+      "id": 9
+    },
+    {
+      "quoteId": 3,
+      "id": 10
+    },
+    {
+      "quoteId": 4,
+      "createdAt": 1613084762357,
+      "id": 11
+    },
+    {
+      "quoteId": 3,
+      "createdAt": 1613085123823,
+      "id": 12
+    },
+    {
+      "quoteId": 4,
+      "createdAt": 1613085146958,
+      "id": 13
+    },
+    {
+      "quoteId": 6,
+      "createdAt": 1613085159042,
+      "id": 14
+    }
+  ]
+}
